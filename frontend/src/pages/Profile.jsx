@@ -275,7 +275,7 @@ export default function Profile() {
 
               <div className='flex flex-col item-center'>
                 <button
-                  onClick={() => handleListingDelete(listing._id)}
+                  onClick={()   => handleListingDelete(listing._id)}
                   className='text-red-700 uppercase'
                 >
                   Delete
