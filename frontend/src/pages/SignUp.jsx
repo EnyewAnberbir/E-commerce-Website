@@ -17,6 +17,6 @@ export default function SignUp() {
   <span className='text-green-600'>Sign In</span>
 </Link>
       </div>
-    </div>
+    </div> 
   )
 }
