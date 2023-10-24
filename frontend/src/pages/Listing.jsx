@@ -8,7 +8,7 @@ import 'swiper/css/bundle';
 import {
   FaBath,
   FaBed,
-  FaChair,
+  FaChair ,
   FaMapMarkedAlt,
   FaMapMarkerAlt,
   FaParking,
