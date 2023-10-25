@@ -75,7 +75,7 @@ export default function Search() {
       setSidebardata({ ...sidebardata, type: e.target.id });
     }
 
-    if (e.target.id === 'searchTerm') {
+    if (e.target.id ===  'searchTerm') {
       setSidebardata({ ...sidebardata, searchTerm: e.target.value });
     }
 
