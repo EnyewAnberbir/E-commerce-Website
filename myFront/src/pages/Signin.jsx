@@ -6,9 +6,9 @@ import {
   signInSuccess,
   signInFailure,
 } from '../redux/user/userSlice';
-// import OAuth from '../components/OAuth';
+import OAuth from '../components/OAuth';
 
-export default function Signin() {
+export default function SignIn() {
   const [formData, setFormData] = useState({});
   const { loading, error } = useSelector((state) => state.user);
   const navigate = useNavigate();
@@ -33,8 +33,7 @@ export default function Signin() {
       const data = await res.json();
       console.log(data);
       if (data.success === false) {
-        dispatch(signInFailure(data.message))
-        // setError(data.message);
+        dispatch(signInFailure(data.message));
         return;
       }
       dispatch(signInSuccess(data));
@@ -68,11 +67,11 @@ export default function Signin() {
         >
           {loading ? 'Loading...' : 'Sign In'}
         </button>
-        {/* <OAuth/> */}
+        <OAuth/>
       </form>
       <div className='flex gap-2 mt-5'>
-        <p>Don't have an account?</p>
-        <Link to={'/signup'}>
+        <p>Dont have an account?</p>
+        <Link to={'/sign-up'}>
           <span className='text-blue-700'>Sign up</span>
         </Link>
       </div>
